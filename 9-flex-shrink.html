@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - flex shrink</title>
+  <style>
+    * {
+      background-color: teal;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      border: 1px solid white;
+      max-width: 350px;
+    }
+
+    .item {
+      margin: 5px;
+      background-color: orange;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .s1 {
+      flex-shrink: 1;
+    }
+
+    .fg1 {
+      flex-grow: 1;
+    }
+
+    .s0 {
+      flex-shrink: 0;
+      flex-basis: 100px;
+    }
+
+    .s2 {
+      flex-shrink: 2;
+      flex-basis: 100px;
+    }
+
+    .s3 {
+      flex-shrink: 3;
+      flex-basis: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h3>shrink 1</h3>
+  <div class="container">
+    <div class="item s1 fg1">A</div>
+    <div class="item s1 fg1">B</div>
+    <div class="item s1 fg1">C</div>
+    <div class="item s1 fg1">D</div>
+    <div class="item s1 fg1">E</div>
+  </div><br>
+  <div class="container">
+    <div class="item s1 fg1">A</div>
+    <div class="item s1 fg1">Basdfasfasdfasfasdf</div>
+    <div class="item s1 fg1">C</div>
+    <div class="item s1 fg1">D</div>
+  </div>
+  <h3>shrink 0 flex-basis 100px</h3>
+  <div class="container">
+    <div class="item s0 fg1">A</div>
+    <div class="item s0 fg1">Basdfasdfadsfasdfadsf</div>
+    <div class="item s0 fg1">Casdfasdfasdf</div>
+    <div class="item s0 fg1">D</div>
+    <div class="item s0 fg1">E</div>
+  </div>
+  <h3>shrink mix flex-basis 100px</h3>
+  <div class="container">
+    <div class="item s1 fg1">A</div>
+    <div class="item s2 fg1">Bfffasdfasfasdfa sdfasdfasdfadsf</div>
+    <div class="item s2 fg1">C</div>
+    <div class="item s3 fg1">D</div>
+  </div>
+</body>
+</html>
