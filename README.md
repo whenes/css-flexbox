@@ -1,6 +1,7 @@
-# css-flexbox
+# CSS - Flexbox - Digital Innovation One
 
-Projeto desenvolvido no curso de Css com Flexbox da DIO.
+Projeto desenvolvido no curso de CSS com Flexbox da DIO.
+
 
 ### Topo da página
 ![firstpage](https://github.com/whenes/css-flexbox/blob/main/flex-projeto/images/prints/page1.png)
